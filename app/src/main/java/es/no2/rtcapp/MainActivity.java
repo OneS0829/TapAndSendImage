@@ -428,6 +428,7 @@ public class MainActivity extends AppCompatActivity {
                     int blue = (texturePixel >> 16) & 0xff;
                     int red = (texturePixel << 16) & 0x00ff0000;
                     int pixel = (texturePixel & 0xff00ff00) | red | blue;
+                    
                     bitmapSource[offset2 + j] = pixel;
                 }
             }
